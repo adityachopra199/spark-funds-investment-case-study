@@ -8,7 +8,7 @@ Spark Funds has two minor constraints for investments:
 - It wants to invest between 5 to 15 million USD per round of investment
 - It wants to invest only in English-speaking countries because of the ease of communication with the companies it would invest in
 - For your analysis, consider a country to be English speaking only if English is one of the official languages in that country
-- You may use this list: Click [here](http://www.emmir.org/fileadmin/user_upload/admission/Countries_where_English_is_an_official_language.pdf) for a list of countries where English is an official language.
+- You may use [this](Countries_where_English_is_an_official_language.pdf) list for a list of countries where English is an official language.
 
 These conditions will give you sufficient information for your initial analysis. Before getting to specific questions, let’s understand the problem and the data first. 
 
@@ -25,4 +25,11 @@ Goals of data analysis: Your goals are divided into three sub-goals:
 - Investment type analysis: Comparing the typical investment amounts in the venture, seed, angel, private equity etc. so that Spark Funds can choose the type that is best suited for their strategy.
 - Country analysis: Identifying the countries which have been the most heavily invested in the past. These will be Spark Funds’ favourites as well.
 - Sector analysis: Understanding the distribution of investments across the eight main sectors. (Note that we are interested in the eight 'main sectors' provided in the mapping file. The two files — companies and rounds2 — have numerous sub-sector names; hence, you will need to map each sub-sector to its main sector.)
+
+Data Understanding
+- 1. Company details: Containing basic data of companies
+![Companies Data Dictionary](companies_data.PNG)
+- 2. Funding round details: The most important parameters are explained below:
+![Funding Data Dictionary](funding_round_data.PNG)
+- 3. Sector Classification: [mapping.csv](mapping.csv) file maps the numerous category names in the companies table (such 3D printing, aerospace, agriculture, etc.) to eight broad sector names. The purpose is to simplify the analysis into eight sector buckets, rather than trying to analyse hundreds of them.
 
